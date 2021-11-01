@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Reserva da Churrasqueira</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-padding">
+
+    <ion-calendar [(ngModel)]="date"
+      (onChange)="onChange($event)"
+      [type]="type"
+      [format]="'YYYY-MM-DD'">
+    </ion-calendar>
+  </div>
+  <ion-button (click)="reservar()" color="success" size="full">Reservar data</ion-button>
+</ion-content>
